@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-weight: 200px;
+            line-height: 1.5;
+        }
+        h3{
+            font-weight: 400px;
+            margin-top: 0%;
+        }
+
+        .container{
+            display: flex;
+            /*height: 500px;*/
+            /*align-items: stretch; */
+            /*align-items: flex-start; */
+            /*flex-direction: row;*/
+            /*justify-content: space-between;*/
+            margin-right: -30px;
+        }
+        .container div{
+            background-color: aqua;
+            border: 1px solid green;
+            padding: 1.6rem;
+            /*flex-basis: 20%;
+            width: 20%;*/
+            margin-right: 30px;
+        }
+        .item-1{
+            flex: 1;
+          /*  order: 2; 
+        */
+        }
+        .item-2{
+
+           flex: 1;
+          /*  order: 3; */
+        }
+        .item-3{
+            flex: 1;
+          /*  order: 1;*/
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <h3>My Card 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dicta eveniet repudiandae labore adipisci maiores, alias obcaecati debitis commodi aliquid vero a consectetur modi cumque excepturi at in optio aperiam!</p>
+        </div>
+        <div class="item-2">
+            <h3>My Card 2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dicta eveniet repudiandae labore adipisci maiores, alias obcaecati debitis commodi aliquid vero a consectetur modi cumque excepturi at in optio aperiam!</p>
+        </div>
+        <div class="item-3">
+            <h3>My Card 3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dicta eveniet repudiandae labore adipisci maiores, alias obcaecati debitis commodi aliquid vero a consectetur modi cumque excepturi at in optio aperiam!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
